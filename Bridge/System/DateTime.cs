@@ -6,6 +6,9 @@ namespace System
     [Name("Date")]
     public struct DateTime : IComparable, IComparable<DateTime>, IEquatable<DateTime>, IFormattable
     {
+        [Template( "{this}" )]
+        public static DateTime SpecifyKind( DateTime value, DateTimeKind kind ) { return default( DateTime ); }
+
         [Template("new Date(864e13)")]
         public static readonly DateTime MaxValue = new DateTime(123);
 
