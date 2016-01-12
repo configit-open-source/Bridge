@@ -5,7 +5,7 @@ namespace System
     [External]
     [Name("Boolean")]
     //[Constructor("!!")]
-    public struct Boolean
+    public struct Boolean : IComparable<Boolean>
     {
         [Template("!!")]
         public Boolean(object value)
@@ -17,6 +17,11 @@ namespace System
         {
             result = false;
             return false;
+        }
+
+        [Template( "{value} === {other} ? 0 : {this} && !{other} ? 1 : -1" )]
+        public int CompareTo( Boolean other ) {
+           return 0;
         }
     }
 }
