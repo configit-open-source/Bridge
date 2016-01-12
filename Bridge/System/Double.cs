@@ -12,10 +12,10 @@ namespace System
         }
 
         [Name("MAX_VALUE")]
-        public static readonly double MaxValue = 0;
+        public const double MaxValue = 0;
 
         [Name("MIN_VALUE")]
-        public static readonly double MinValue = 0;
+        public const double MinValue = 0;
 
         [InlineConst]
         public const double Epsilon = 4.94065645841247E-324;

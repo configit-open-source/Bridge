@@ -21,13 +21,13 @@ namespace System
         public const float Epsilon = (float)1.4e-45;
 
         [Name("NaN")]
-        public static readonly float NaN = 0;
+        public const float NaN = 0;
 
         [Name("NEGATIVE_INFINITY")]
-        public static readonly float NegativeInfinity = 0;
+        public const float NegativeInfinity = 0;
 
         [Name("POSITIVE_INFINITY")]
-        public static readonly float PositiveInfinity = 0;
+        public const float PositiveInfinity = 0;
 
         [Template("Bridge.Int.format({this}, {format})")]
         public string Format(string format)
