@@ -35,7 +35,7 @@ namespace Bridge.Contract
             {
                 if (this.Node != null)
                 {
-                    return this.Node.GetParent<SyntaxTree>().FileName;
+                    return this.Node.GetParent<SyntaxTree>()?.FileName;
                 }
 
                 return null;
