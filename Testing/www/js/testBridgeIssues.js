@@ -4803,14 +4803,14 @@ Bridge.define('ClientTestLibrary.TestBridgeIssues', {
             Bridge.get(ClientTestLibrary.TestBridgeIssues).ensureNumber(assert, DecimalMinValue, "-7.9228162514264337593543950335e+28", "DecimalMinValue");
 
             // Decimal consts in expressions
-            DecimalZero  = Bridge.Decimal.Zero.add(Bridge.Decimal(0));
-            DecimalOne  = Bridge.Decimal.One.add(Bridge.Decimal(0));
+            DecimalZero  = Bridge.Decimal(0.0);
+            DecimalOne  = Bridge.Decimal(1.0);
             ;
-            DecimalMinusOne  = Bridge.Decimal.MinusOne.add(Bridge.Decimal(0));
+            DecimalMinusOne  = Bridge.Decimal(-1.0);
             ;
-            DecimalMaxValue  = Bridge.Decimal.MaxValue.add(Bridge.Decimal(0));
+            DecimalMaxValue  = Bridge.Decimal(0.0);
             ;
-            DecimalMinValue  = Bridge.Decimal.MinValue.add(Bridge.Decimal(0));
+            DecimalMinValue  = Bridge.Decimal(0.0);
             ;
 
             Bridge.get(ClientTestLibrary.TestBridgeIssues).ensureNumber(assert, DecimalZero, "0", "DecimalZeroin expression");
@@ -4835,8 +4835,8 @@ Bridge.define('ClientTestLibrary.TestBridgeIssues', {
             Bridge.get(ClientTestLibrary.TestBridgeIssues).ensureNumber(assert, DoubleNaN, "NaN", "DoubleNaN");
 
             // Double consts in expressions
-            DoubleMaxValue = Number.MAX_VALUE + 0;
-            DoubleMinValue = Number.MIN_VALUE + 0;
+            DoubleMaxValue = 0.0;
+            DoubleMinValue = 0.0;
             DoubleEpsilon = 4.94065645841247E-324;
             DoubleNegativeInfinity = Number.NEGATIVE_INFINITY + 0;
             DoublePositiveInfinity = Number.POSITIVE_INFINITY + 0;
@@ -4870,14 +4870,14 @@ Bridge.define('ClientTestLibrary.TestBridgeIssues', {
             Bridge.get(ClientTestLibrary.TestBridgeIssues).ensureNumber(assert, MathSQRT2, "1.4142135623730951", "MathSQRT2");
 
             // Math consts in expression
-            MathE = Math.E + 0;
-            MathLN10 = Math.LN10 + 0;
-            MathLN2 = Math.LN2 + 0;
-            MathLOG2E = Math.LOG2E + 0;
-            MathLOG10E = Math.LOG10E + 0;
-            MathPI = Math.PI + 0;
-            MathSQRT1_2 = Math.SQRT1_2 + 0;
-            MathSQRT2 = Math.SQRT2 + 0;
+            MathE = 0.0;
+            MathLN10 = 0.0;
+            MathLN2 = 0.0;
+            MathLOG2E = 0.0;
+            MathLOG10E = 0.0;
+            MathPI = 0.0;
+            MathSQRT1_2 = 0.0;
+            MathSQRT2 = 0.0;
 
             Bridge.get(ClientTestLibrary.TestBridgeIssues).ensureNumber(assert, MathE, "2.718281828459045", "MathEin expression");
             Bridge.get(ClientTestLibrary.TestBridgeIssues).ensureNumber(assert, MathLN10, "2.302585092994046", "MathLN10in expression");
@@ -4908,9 +4908,9 @@ Bridge.define('ClientTestLibrary.TestBridgeIssues', {
             SingleMaxValue = 3.40282347E+38;
             SingleMinValue = -3.40282347E+38;
             SingleEpsilon = 1.401298E-45;
-            SingleNaN = Number.NaN + 0;
-            SingleNegativeInfinity = Number.NEGATIVE_INFINITY + 0;
-            SinglePositiveInfinity = Number.POSITIVE_INFINITY + 0;
+            SingleNaN = 0.0;
+            SingleNegativeInfinity = 0.0;
+            SinglePositiveInfinity = 0.0;
 
             Bridge.get(ClientTestLibrary.TestBridgeIssues).ensureNumber(assert, SingleMaxValue, "3.40282347e+38", "SingleMaxValuein expression");
             Bridge.get(ClientTestLibrary.TestBridgeIssues).ensureNumber(assert, SingleMinValue, "-3.40282347e+38", "SingleMinValuein expression");

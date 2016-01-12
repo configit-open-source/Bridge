@@ -5,6 +5,7 @@
   <file name="Core.js" />
   <file name="Nullable.js" />
   <file name="Char.js" />
+  <file name="Boolean.js" />
   <file name="String.js" />
   <file name="Enum.js" />
   <file name="Class.js" />
@@ -38,6 +39,7 @@
     <include name="Core.js" />
     <include name="Nullable.js" />
     <include name="Char.js" />
+    <include name="Boolean.js" />
     <include name="String.js" />
     <include name="Enum.js" />
     <include name="Browser.js" />

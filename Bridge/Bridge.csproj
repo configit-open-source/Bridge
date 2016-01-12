@@ -605,6 +605,7 @@
     <EmbeddedResource Include="Resources\Locales\zh.js" />
     <EmbeddedResource Include="Resources\Locales\zu-ZA.js" />
     <EmbeddedResource Include="Resources\Locales\zu.js" />
+    <Content Include="Resources\Boolean.js" />
     <Content Include="Resources\Enum.js" />
     <Content Include="Resources\Math.js" />
     <Content Include="Resources\Version.js" />

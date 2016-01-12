@@ -151,6 +151,7 @@
     <Compile Include="Tests\MarkupCheckRequired.cs" />
     <Compile Include="Tests\NotCompiling.cs" />
     <Compile Include="Tests\RunTests.cs" />
+    <Compile Include="Tests\SystemFunctions\TestBooleanFunctions.cs" />
     <Compile Include="Tests\SystemFunctions\TestVersion.cs" />
     <Compile Include="Tests\SystemFunctions\TestDateFunctions.cs" />
     <Compile Include="Tests\SystemFunctions\TestStringBuilderFunctions.cs" />

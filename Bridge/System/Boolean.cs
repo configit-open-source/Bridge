@@ -11,5 +11,12 @@ namespace System
         public Boolean(object value)
         {
         }
+
+        [Template( "Bridge.Boolean.tryParse({s}, {result})" )]
+        public static bool TryParse( string s, out bool result )
+        {
+            result = false;
+            return false;
+        }
     }
 }

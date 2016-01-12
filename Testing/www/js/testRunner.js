@@ -62,6 +62,9 @@ Bridge.define('ClientTestLibrary.RunTests', {
             QUnit.test("#329", Bridge.get(ClientTestLibrary.TestDateFunctions).bridge329);
             QUnit.test("#349", Bridge.get(ClientTestLibrary.TestDateFunctions).bridge349);
 
+            QUnit.module("Boolean");
+            QUnit.test("TryParse", Bridge.get(ClientTestLibrary.TestBooleanFunctions).tryParse);
+
             QUnit.module("Try/Catch");
             QUnit.test("Try/Catch simpe", Bridge.get(ClientTestLibrary.TestTryCatchBlocks).simpleTryCatch);
             QUnit.test("Try/Catch caught exceptions", Bridge.get(ClientTestLibrary.TestTryCatchBlocks).caughtExceptions);

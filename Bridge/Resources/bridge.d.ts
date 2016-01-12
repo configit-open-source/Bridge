@@ -106,6 +106,12 @@
 
     var Char: Char;
 
+    export interface Boolean {
+        tryParse(value: string, result: { v: Boolean }): boolean;
+    }
+
+    var Boolean: Boolean;
+
     export interface String {
         isNullOrWhiteSpace(value: string): boolean;
         isNullOrEmpty(value: string): boolean;
